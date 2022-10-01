@@ -10,6 +10,9 @@ import { DisplaycategoryComponent } from './displaycategory/displaycategory.comp
 import { EditblogComponent } from './editblog/editblog.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ViewComponent } from './view/view.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { ViewComponent } from './view/view.component';
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     AdminRoutingModule,
+   
     
   ],
   exports:[

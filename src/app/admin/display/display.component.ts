@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdminserviceService } from '../adminservice.service';
 
 @Component({
   selector: 'app-display',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display.component.css']
 })
 export class DisplayComponent implements OnInit {
-
-  constructor() { }
+  data:any
+  constructor(private admin_service:AdminserviceService) { }
 
   ngOnInit(): void {
+    this.admin_service.getdata().subscribe((res)=>{
+      this.data=res
+    })
   }
 
 }
