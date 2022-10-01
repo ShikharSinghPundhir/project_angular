@@ -32,6 +32,11 @@ import { ViewComponent } from './view/view.component';
     DashboardComponent,
     EditblogComponent,
     DisplaycategoryComponent,
+    CreateblogComponent,
+    CreatecategoryComponent,
+    DisplayComponent,
+    SidebarComponent,
+    ViewComponent,
   
   ]
 })
