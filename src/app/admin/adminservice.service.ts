@@ -10,4 +10,8 @@ export class AdminserviceService {
   getdata(){
     return this.http.get(this.url+'blogs')
   }
+  adddata(add_aata_var:any){
+    return this.http.post(this.url+'blogs',add_aata_var)
+
+  }
 }
