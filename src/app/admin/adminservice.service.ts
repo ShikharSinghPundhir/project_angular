@@ -14,4 +14,7 @@ export class AdminserviceService {
     return this.http.post(this.url+'blogs',add_aata_var)
 
   }
+  view_blog(id:any){
+    return this.http.get(this.url+'blogs/'+id)
+  }
 }

@@ -34,7 +34,7 @@ const routes: Routes = [
     component : DisplaycategoryComponent
   },
   {
-    path:'admin-view',
+    path:'admin-view/:id',
     component:ViewComponent
   }
 ];

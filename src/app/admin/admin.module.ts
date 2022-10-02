@@ -24,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     DisplaycategoryComponent,
     EditblogComponent,
     SidebarComponent,
-    ViewComponent
+    ViewComponent,
+    
   ],
   imports: [
     CommonModule,
