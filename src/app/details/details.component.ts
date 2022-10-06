@@ -11,6 +11,7 @@ export class DetailsComponent implements OnInit {
   id:any
   viewblogid:any
   recentblogsdetails:any
+  categories:any
   constructor(private admin_service:AdminserviceService,private router:ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -21,6 +22,9 @@ export class DetailsComponent implements OnInit {
   })
   this.admin_service.getdata().subscribe((res)=>{
     this.recentblogsdetails=res
+  })
+  this.admin_service.getcategory().subscribe((res)=>{
+    this.categories=res
   })
 
 }
