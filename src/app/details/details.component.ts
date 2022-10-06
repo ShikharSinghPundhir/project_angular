@@ -10,6 +10,7 @@ import { AdminserviceService } from '../admin/adminservice.service';
 export class DetailsComponent implements OnInit {
   id:any
   viewblogid:any
+  recentblogsdetails:any
   constructor(private admin_service:AdminserviceService,private router:ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -18,6 +19,10 @@ export class DetailsComponent implements OnInit {
       this.viewblogid=res;
       console.log(this.viewblogid)
   })
+  this.admin_service.getdata().subscribe((res)=>{
+    this.recentblogsdetails=res
+  })
 
 }
+
 }

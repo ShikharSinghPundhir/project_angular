@@ -27,4 +27,10 @@ export class AdminserviceService {
     return this.http.post(this.url+'contacts',add_contact_var)
 
   }
+  getcategory(){
+    return this.http.get(this.url+'category')
+  }
+  addcategory(add_category_var:any){
+    return this.http.post(this.url+'category',add_category_var)
+  }
 }

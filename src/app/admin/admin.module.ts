@@ -6,13 +6,14 @@ import { CreateblogComponent } from './createblog/createblog.component';
 import { CreatecategoryComponent } from './createcategory/createcategory.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DisplayComponent } from './display/display.component';
-import { DisplaycategoryComponent } from './displaycategory/displaycategory.component';
+
 import { EditblogComponent } from './editblog/editblog.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ViewComponent } from './view/view.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactdisplayComponent } from './contactdisplay/contactdisplay.component';
+import { CategorydisplayComponent } from './categorydisplay/categorydisplay.component';
 
 
 
@@ -22,11 +23,11 @@ import { ContactdisplayComponent } from './contactdisplay/contactdisplay.compone
     CreatecategoryComponent,
     DashboardComponent,
     DisplayComponent,
-    DisplaycategoryComponent,
     EditblogComponent,
     SidebarComponent,
     ViewComponent,
     ContactdisplayComponent,
+    CategorydisplayComponent,
     
   ],
   imports: [
@@ -40,12 +41,13 @@ import { ContactdisplayComponent } from './contactdisplay/contactdisplay.compone
   exports:[
     DashboardComponent,
     EditblogComponent,
-    DisplaycategoryComponent,
     CreateblogComponent,
     CreatecategoryComponent,
     DisplayComponent,
     SidebarComponent,
     ViewComponent,
+    ContactdisplayComponent,
+    CategorydisplayComponent,
   
   ]
 })
