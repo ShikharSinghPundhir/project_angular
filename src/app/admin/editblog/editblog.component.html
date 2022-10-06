@@ -1,1 +1,29 @@
-<p>editblog works!</p>
+<section class="dashboard-wrap mtb-40">
+    <div class="container">
+        <div class="body-content">
+            <div class="row">
+                <div class="col-md-3">
+                    <app-sidebar></app-sidebar>
+                </div>
+                <div class="col-md-9">
+                    <div class="dash-right">
+                        <div class="dash-header">
+                            <div class="dash-title">
+                                <form [formGroup]="form" (ngSubmit)="update()">
+                                    title:
+                                    <input type="text" formControlName="title">
+                                    <br><br>
+                                    body:
+                                    <input type="text" formControlName="description">
+                                    <br><br>
+                                    <button>Submit</button>
+                                </form>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

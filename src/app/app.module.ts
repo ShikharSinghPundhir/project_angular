@@ -13,6 +13,9 @@ import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { BlogComponent } from './blog/blog.component';
 import { AdminModule } from './admin/admin.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -25,10 +28,14 @@ import { AdminModule } from './admin/admin.module';
     FooterComponent,
     HomeComponent,
     PagenotfoundComponent,
-    BlogComponent
+    BlogComponent,
+  
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
     AdminModule,
     AppRoutingModule,
     

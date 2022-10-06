@@ -34,7 +34,7 @@
                                     <td>{{get.description}}</td>
                                     <td>{{get.image}}</td>
                                     <td><a [routerLink]="['/admin-view',get.id]"><i class="fa-solid fa-eye" style="color: deepskyblue;"></i></a>&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;
-                                        <a><i class="fa-solid fa-pen-to-square" style="color: green;"></i></a>&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;
+                                        <a [routerLink]="['/admin-editblog',get.id]"><i class="fa-solid fa-pen-to-square" style="color: green;"></i></a>&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;
                                         <a><i class="fa-sharp fa-solid fa-trash" style="color: red;"></i></a>
                                     </td>
                                 </tr>

@@ -12,6 +12,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ViewComponent } from './view/view.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ContactdisplayComponent } from './contactdisplay/contactdisplay.component';
 
 
 
@@ -25,6 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     EditblogComponent,
     SidebarComponent,
     ViewComponent,
+    ContactdisplayComponent,
     
   ],
   imports: [

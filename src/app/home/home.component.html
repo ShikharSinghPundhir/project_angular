@@ -12,60 +12,16 @@
 <section class="featured-blog mtb-40">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="blog-box">
+            <div class="col-md-4" *ngFor="let s of data">
+                <div class="blog-box" >
                     <img src="assets/images/img1.jpg" alt="blog1" />
-                    <h3>Sample blog post 1</h3>
+                    <h3>{{s.title}}</h3>
                     <p>by <span>RSGiTECH</span> on <span>October 22, 2018</span></p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <a [routerLink]="['details/',1]"  class="btn btn-danger">Read more...</a>
+                    <p>{{s.description}}</p>
+                    <a [routerLink]="['details/',s.id]"  class="btn btn-danger">Read more...</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="blog-box">
-                    <img src="assets/images/img2.jpg" alt="blog1" />
-                    <h3>Sample blog post 2</h3>
-                    <p>by <span>RSGiTECH</span> on <span>October 22, 2018</span></p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <a [routerLink]="['details/',2]" class="btn btn-danger">Read more...</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog-box">
-                    <img src="assets/images/img3.jpg" alt="blog1" />
-                    <h3>Sample blog post 3</h3>
-                    <p>by <span>RSGiTECH</span> on <span>October 22, 2018</span></p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <a [routerLink]="['details/',3]" class="btn btn-danger">Read more...</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog-box">
-                    <img src="assets/images/img4.jpg" alt="blog1" />
-                    <h3>Sample blog post 4</h3>
-                    <p>by <span>RSGiTECH</span> on <span>October 22, 2018</span></p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <a [routerLink]="['details/',4]" class="btn btn-danger">Read more...</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog-box">
-                    <img src="assets/images/img5.jpg" alt="blog1" />
-                    <h3>Sample blog post 5</h3>
-                    <p>by <span>RSGiTECH</span> on <span>October 22, 2018</span></p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <a [routerLink]="['details/',5]" class="btn btn-danger">Read more...</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog-box">
-                    <img src="assets/images/img6.jpg" alt="blog1" />
-                    <h3>Sample blog post 6</h3>
-                    <p>by <span>RSGiTECH</span> on <span>October 22, 2018</span></p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <a [routerLink]="['details/',6]" class="btn btn-danger">Read more...</a>
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>

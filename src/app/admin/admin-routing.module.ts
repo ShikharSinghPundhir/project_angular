@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactComponent } from '../contact/contact.component';
+import { ContactdisplayComponent } from './contactdisplay/contactdisplay.component';
 import { CreateblogComponent } from './createblog/createblog.component';
 import { CreatecategoryComponent } from './createcategory/createcategory.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -26,7 +28,7 @@ const routes: Routes = [
     component : DisplayComponent
   },
   {
-    path : 'admin-editblog',
+    path : 'admin-editblog/:id',
     component : EditblogComponent
   },
   {
@@ -36,6 +38,10 @@ const routes: Routes = [
   {
     path:'admin-view/:id',
     component:ViewComponent
+  },
+  {
+    path:'admin-contactdisplay',
+    component:ContactdisplayComponent
   }
 ];
 

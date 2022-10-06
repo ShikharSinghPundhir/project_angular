@@ -10,11 +10,21 @@ export class AdminserviceService {
   getdata(){
     return this.http.get(this.url+'blogs')
   }
-  adddata(add_aata_var:any){
-    return this.http.post(this.url+'blogs',add_aata_var)
+  adddata(add_data_var:any){
+    return this.http.post(this.url+'blogs',add_data_var)
 
   }
   view_blog(id:any){
     return this.http.get(this.url+'blogs/'+id)
+  }
+  update_blog(data:any,id:any){
+    return this.http.put(this.url+'blogs/'+id,data)
+  }
+  getcontact(){
+    return this.http.get(this.url+'contacts')
+  }
+  addcontact(add_contact_var:any){
+    return this.http.post(this.url+'contacts',add_contact_var)
+
   }
 }
