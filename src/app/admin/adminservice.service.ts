@@ -33,4 +33,10 @@ export class AdminserviceService {
   addcategory(add_category_var:any){
     return this.http.post(this.url+'category',add_category_var)
   }
+  adduser(add_user_var:any){
+    return this.http.post(this.url+'user',add_user_var)
+  }
+  getuser(){
+    return this.http.get(this.url+'user')
+  }
 }

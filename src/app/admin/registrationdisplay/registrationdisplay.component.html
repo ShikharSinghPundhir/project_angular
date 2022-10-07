@@ -1,0 +1,39 @@
+<section class="dashboard-wrap mtb-40">
+    <div class="container">
+        <div class="body-content">
+            <div class="row">
+                <div class="col-md-3">
+                    <app-sidebar></app-sidebar>
+                </div>
+                <div class="col-md-9">
+                    <div class="dash-right">
+                        <div class="dash-header">
+                            <div class="dash-title">
+                                <h1>Users details</h1>
+                            </div>
+                            <div class="dash-nav">
+                                <a [routerLink]="['/admin-createblog']" class="btn btn-success">Add Post</a>
+                            </div>
+                        </div>
+                        <table class="table  table-hover  ">
+                            <thead>
+                                <tr>
+                                    <th class="a">ID</th>
+                                    <th class="a">Name</th>
+                                    <th class="a">Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor= "let get of data">
+                                    <td>{{get.id}}</td>
+                                    <td>{{get.name}}</td>
+                                    <td>{{get.email}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

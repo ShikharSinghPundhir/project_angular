@@ -3,42 +3,14 @@
     {
       "title": "rajeev",
       "description": "hello rajeev",
+      "image": "https://www.aviationcoaching.com/wp-content/uploads/2017/04/qbeats-blog-post-how-does-qbeats-integrate-with-wordpress-1024x576.jpg",
       "id": 1
     },
     {
-      "title": "rohit",
-      "description": "hello bhai",
-      "id": 3
-    },
-    {
-      "title": "bhauuuuuu",
-      "description": "uhadjbdja",
-      "id": 4
-    },
-    {
-      "title": "Radhe Bhai",
-      "description": "Jai Ram Ji Ki",
-      "id": 5
-    },
-    {
-      "title": "seeta",
-      "description": "geeta",
-      "id": 7
-    },
-    {
-      "title": "bhai",
-      "description": " radhe",
-      "id": 8
-    },
-    {
-      "title": "nn",
-      "description": "v",
-      "id": 9
-    },
-    {
-      "title": "nn",
-      "description": "v",
-      "id": 10
+      "title": "raj",
+      "description": "hello rajeev",
+      "image": "https://static.teamguru.com/data/images/thumb/180_da8e22ef6e.jpg",
+      "id": 2
     }
   ],
   "contacts": [
@@ -77,6 +49,26 @@
     {
       "title": "nfsnaabfbadbf  ueh",
       "id": 5
+    }
+  ],
+  "user": [
+    {
+      "name": "asdfghj",
+      "email": "poiuy@gmail",
+      "password": "asdfg",
+      "id": 2
+    },
+    {
+      "name": "vikas",
+      "email": "radh@gmail",
+      "password": "789562",
+      "id": 3
+    },
+    {
+      "name": "ram",
+      "email": "ram@gmail.com",
+      "password": "qwerty",
+      "id": 4
     }
   ]
 }

@@ -14,6 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactdisplayComponent } from './contactdisplay/contactdisplay.component';
 import { CategorydisplayComponent } from './categorydisplay/categorydisplay.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { RegistrationdisplayComponent } from './registrationdisplay/registrationdisplay.component';
 
 
 
@@ -28,6 +31,9 @@ import { CategorydisplayComponent } from './categorydisplay/categorydisplay.comp
     ViewComponent,
     ContactdisplayComponent,
     CategorydisplayComponent,
+    AboutusComponent,
+    RegistrationComponent,
+    RegistrationdisplayComponent,
     
   ],
   imports: [
@@ -48,6 +54,7 @@ import { CategorydisplayComponent } from './categorydisplay/categorydisplay.comp
     ViewComponent,
     ContactdisplayComponent,
     CategorydisplayComponent,
+    RegistrationComponent
   
   ]
 })

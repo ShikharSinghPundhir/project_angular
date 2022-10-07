@@ -8,6 +8,8 @@ import { CreatecategoryComponent } from './createcategory/createcategory.compone
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DisplayComponent } from './display/display.component';
 import { EditblogComponent } from './editblog/editblog.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { RegistrationdisplayComponent } from './registrationdisplay/registrationdisplay.component';
 
 import { ViewComponent } from './view/view.component';
 
@@ -43,6 +45,14 @@ const routes: Routes = [
   {
     path:'admin-contactdisplay',
     component:ContactdisplayComponent
+  },
+  {
+    path:'admin-registration',
+    component:RegistrationComponent
+  },
+  {
+    path:'admin-registrationdisplay',
+    component:RegistrationdisplayComponent
   }
 ];
 
