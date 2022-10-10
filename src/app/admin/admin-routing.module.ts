@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 import { CategorydisplayComponent } from './categorydisplay/categorydisplay.component';
 import { ContactdisplayComponent } from './contactdisplay/contactdisplay.component';
 import { CreateblogComponent } from './createblog/createblog.component';
@@ -53,6 +55,10 @@ const routes: Routes = [
   {
     path:'admin-registrationdisplay',
     component:RegistrationdisplayComponent
+  },
+  {
+    path:'admin-aboutus',
+    component:AboutusComponent
   }
 ];
 

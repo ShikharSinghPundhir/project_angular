@@ -3,18 +3,19 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="login-box">
-                    <h1>Administrator Login</h1>
-                    <form action="">
-                        <div class="form-group">
-                            <input type="text" name="username" class="form-control" placeholder="Username">
+                    <h1>Administrator Login 12334</h1>
+                    <form  [formGroup]="form" (ngSubmit)="login_user()">
+                        <div class="form-group" >
+                            <input type="text"  class="form-control" placeholder="Username" formControlName="email">
                         </div>
                         <div class="form-group">
-                            <input type="password" name="password" class="form-control" placeholder="Password">
+                            <input type="password"  class="form-control" placeholder="Password" formControlName="password" >
                         </div>
                         <div class="form-group">
-                            <a href="dashboard.html" class="btn btn-primary">Log In</a>&nbsp;&nbsp;
+                            <button type="submit" class="btn btn-primary" >Login</button>&nbsp;&nbsp;
                             <a [routerLink]="['/admin-registration']" class="btn btn-primary" > Sign Up Now</a>
                         </div>
+                        <!-- <button >Login</button> -->
                         
                     </form>
                 </div>         

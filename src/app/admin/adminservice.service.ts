@@ -36,7 +36,17 @@ export class AdminserviceService {
   adduser(add_user_var:any){
     return this.http.post(this.url+'user',add_user_var)
   }
+  user_login(data:any){
+    return this.http.post(this.url+'user',data)
+  }
   getuser(){
     return this.http.get(this.url+'user')
   }
+  aboutget(){
+    return this.http.get(this.url+'aboutus')
+  }
+  aboutadd(x:any){
+    return this.http.post(this.url+'aboutus',x)
+  }
+  
 }

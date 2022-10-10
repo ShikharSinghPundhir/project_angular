@@ -23,11 +23,12 @@
             <a href="#">
               <div class="rb-box" *ngFor= "let get of recentblogsdetails">
                 <div class="rb-box-img">
-                  <img src="assets/images/img1.jpg" alt="blog1" />
+                  
+                  <img src="{{get.image}}" alt="blog1" width="100px" height="100px" />
                 </div>
                 <div class="rb-box-desc" >
                   <h4>{{get.title}}</h4>
-                  <p>Posted On: October 22, 2018</p>
+                  
                 </div>
               </div>
             </a>

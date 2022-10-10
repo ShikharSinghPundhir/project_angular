@@ -14,7 +14,8 @@ export class CreateblogComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       title : new FormControl(''),
-      description :new FormControl('')
+      description :new FormControl(''),
+      image :new FormControl('')
     })
   }
   add_blog(){
